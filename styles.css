@@ -1,0 +1,68 @@
+
+
+:root{
+    --body-background:#f4f4f9;
+    --heading:darkslateblue;
+    --player1-button:rgb(67, 65, 65);
+    --player2-button:gray;
+    --winning-message-text:rgb(13, 13, 13);
+    --winning-message-background:rgb(255, 255, 255);
+    --btn-primary:rgb(194, 133, 22);
+    --btn-secondary:rgb(90, 102, 114);
+    --btn-background:rgb(12, 59, 100);
+}
+*{
+    box-sizing: border-box
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background)
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--heading);
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: calc(500px / 3);
+    height: calc(500px / 3);
+    border: 6px solid white;
+    background-color: var(--btn-background);
+    font-size: 4rem;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0px 5px 10px 0);
+}
+
+.reset-btn{
+    width: 150px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+
+    border-radius: 10px;
+    border: none;
+    background-color: var(--btn-primary);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.reset-btn:hover{
+    background-color: var(--btn-secondary);
+}
